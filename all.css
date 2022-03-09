@@ -10,6 +10,11 @@ border-bottom: 1px solid grey;
 padding-left: 50px;
 padding-right: 50px;
 }
+@media screen and (max-width: 600px) {
+  .topnav {
+    padding: 0;
+  }
+}
 
 .logo1{
 font-weight: bolder;
