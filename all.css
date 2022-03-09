@@ -79,6 +79,14 @@ margin-top: 20px;
 	padding-left: 10px;
   }
 }
+
+.submitAdd{
+	border-style: none;
+	height: 53px;
+	width: 158px;
+	background: #0F0E0E;
+	color: #fff;
+}
 @media screen and (max-width: 600px) {
   .submitAdd {
     border-style: none;
@@ -86,13 +94,6 @@ margin-top: 20px;
 	background: #0F0E0E;
 	color: #fff;
   }
-}
-.submitAdd{
-	border-style: none;
-	height: 53px;
-	width: 158px;
-	background: #0F0E0E;
-	color: #fff;
 }
 
 .Actions{
