@@ -260,3 +260,7 @@ text-decoration: none;
 .DeliveryArea{
 	margin-top: 20px;
 }
+.brand{
+	display: flex;
+	flex-direction: column;
+}
