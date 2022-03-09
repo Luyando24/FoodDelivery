@@ -90,7 +90,7 @@ margin-top: 20px;
 @media screen and (max-width: 600px) {
   .addressInput {
     height: 53px;
-	width: 250px;
+	width: 100%;
 	border-style: none;
 	padding-left: 10px;
   }
