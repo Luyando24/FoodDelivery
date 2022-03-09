@@ -220,3 +220,29 @@ text-decoration: none;
     margin: 3px;
   }
 }
+.loginPane{
+	text-align: center;
+	margin-top: 10px;
+
+}
+
+.loginInput{
+	border-style: none;
+	border-radius: 20px;
+	height: 40px;
+	padding: 10px;
+	background: #E5E5E5;
+}
+.loginSubmit{
+	border-style: none;
+	border-radius: 20px;
+	height: 40px;
+	padding: 10px;
+	width: 45%;
+	color: #fff;
+	background: #1EC91B;
+}
+.btn a{
+	text-decoration: none;
+	color: #fff;
+}
