@@ -192,6 +192,6 @@ text-decoration: none;
 
 @media screen and (max-width: 600px) {
   .padding {
-    margin: 0;
+    margin: 1px;
   }
 }
