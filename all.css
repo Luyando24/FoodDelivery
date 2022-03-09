@@ -1,0 +1,175 @@
+body{
+	margin: 0;
+	background: #E5E5E5;
+	font-family: 'Roboto', sans-serif;
+}
+.topnav{
+background: #fff;
+height: 80px;
+border-bottom: 1px solid grey;
+padding-left: 50px;
+padding-right: 50px;
+}
+
+.logo1{
+font-weight: bolder;
+font-size: 32px;
+text-decoration: none;
+color: #000;
+}
+.logo2{
+font-size: 32px;
+text-decoration: none;
+color: #1EC91B;
+}
+
+
+.addRestaurant{
+	text-decoration: none;
+	color: #535353;
+}
+.addRestaurant a: hover{
+	color: #1EC91B;
+}
+
+.register{
+	background: #E5E5E5;
+	border-radius: 20px;
+}
+.login{
+	background: #1EC91B;
+	border-radius: 20px;
+	color: #fff;
+}
+.register:hover{
+	opacity: 0.7;
+}
+.login:hover{
+	opacity: 0.7;
+}
+.banner{
+	display: flex;
+	justify-content: ;
+	background: #CACC69;
+	height: 350px;
+	flex-direction: column;
+	text-align: center;
+}
+.AddressForm{
+margin-top: 20px;
+}
+.bannerTitle{
+	margin-top: 100px;
+	font-weight: bolder;
+	font-size: 50px;
+	color: #fff;
+	font-style: italic;
+}
+.addressInput{
+	height: 53px;
+	width: 519px;
+	border-style: none;
+	padding-left: 10px;
+}
+.submitAdd{
+	border-style: none;
+	height: 53px;
+	width: 158px;
+	background: #0F0E0E;
+	color: #fff;
+}
+
+.Actions{
+	display: flex;
+	margin-top: 10px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.card{
+	border-radius: 20px;
+}
+.card img{
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+.cardActions img{
+	height: 200px;
+
+}
+
+.card:hover{
+	opacity: 0.7;
+	-webkit-box-shadow: 5px 5px 14px -9px #000000; 
+box-shadow: 5px 5px 14px -9px #000000;
+    cursor: pointer;
+}
+
+.padding{
+	margin-right: 50px;
+	margin-left: 50px;
+}
+.category{
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+.h4{
+	font-weight: bolder;
+}
+.NearMeCard img{
+	height: 120px;
+}
+.NearMeCard{
+	margin-top: 10px;
+}
+.NearMe{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.allFood img{
+	height: 220px;
+}
+.allFood{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.BuyNow{
+	background: #1EC91B;
+	color: #fff;
+}
+.AddCart{
+	background: #0F0E0E;
+	color: #fff;
+}
+.groupedButtons{
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer{
+	background: #0F0E0E;
+	height: 400px;
+	margin-top: 10px;
+	padding: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.footerDiv a{
+	text-decoration: none;
+	color: #fff;
+}
+.footerDiv{
+	display: flex;
+	flex-direction: column;
+	line-height: 50px;
+}
+.logo11{
+	color: #fff;
+	font-weight: bolder;
+font-size: 32px;
+text-decoration: none;
+}
