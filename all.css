@@ -36,6 +36,11 @@ color: #1EC91B;
 	background: #E5E5E5;
 	border-radius: 20px;
 }
+@media screen and (max-width: 600px) {
+  .register {
+    display: none;
+  }
+}
 .login{
 	background: #1EC91B;
 	border-radius: 20px;
