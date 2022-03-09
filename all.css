@@ -74,9 +74,17 @@ margin-top: 20px;
 @media screen and (max-width: 600px) {
   .addressInput {
     height: 53px;
-	width: 100px;
+	width: 200px;
 	border-style: none;
 	padding-left: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .submitAdd {
+    border-style: none;
+	height: 53px;
+	background: #0F0E0E;
+	color: #fff;
   }
 }
 .submitAdd{
