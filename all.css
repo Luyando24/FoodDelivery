@@ -232,6 +232,7 @@ text-decoration: none;
 	height: 40px;
 	padding: 10px;
 	background: #E5E5E5;
+	width: 100%;
 }
 .loginSubmit{
 	border-style: none;
