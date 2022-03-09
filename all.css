@@ -246,6 +246,10 @@ text-decoration: none;
 	text-decoration: none;
 	color: #fff;
 }
+.btn-register a{
+	text-decoration: none;
+	color: #000;
+}
 
 @media screen and (max-width: 600px) {
   .loginPicture {
