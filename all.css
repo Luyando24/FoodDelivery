@@ -246,14 +246,14 @@ text-decoration: none;
 	text-decoration: none;
 	color: #fff;
 }
+
 @media screen and (max-width: 600px) {
-  .loginPicture img {
-    width: 100%;
+  .loginPicture {
+    display: none;
   }
 }
 @media screen and (max-width: 600px) {
-  .row {
-    display: flex;
-    flex-wrap: wrap;
+  .loginPane {
+    margin-top: 20px;
   }
 }
