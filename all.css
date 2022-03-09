@@ -75,6 +75,11 @@ margin-top: 20px;
 	color: #fff;
 	font-style: italic;
 }
+@media screen and (max-width: 600px) {
+  .bannerTitle {
+    margin: 0;
+  }
+}
 .addressInput{
 	height: 53px;
 	width: 519px;
