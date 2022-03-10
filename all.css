@@ -75,7 +75,7 @@ color: #1EC91B;
 	display: flex;
 	justify-content: ;
 	background: #CACC69;
-	height: 150px;
+	height: 220px;
 	flex-direction: column;
 	text-align: center;
 
@@ -83,6 +83,10 @@ color: #1EC91B;
 .AddressForm{
 margin-top: 20px;
 }
+ .ProvinceAdress{
+margin-top: 0px;
+}
+
 .bannerTitle{
 	margin-top: 100px;
 	font-weight: bolder;
