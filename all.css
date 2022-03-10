@@ -111,6 +111,18 @@ color: #1EC91B;
 	margin-top: 2px;
 }
 @media screen and (max-width: 600px) {
+  .OrderButtons {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    width: 100%;
+    padding: 5px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
   .orderSlider {
     width: 100%;
     display: flex;
