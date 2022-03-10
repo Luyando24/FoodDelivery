@@ -185,9 +185,13 @@ box-shadow: 5px 5px 14px -9px #000000;
 	flex-wrap: nowrap;
 	justify-content: space-between;
 }
+.restaurantCount .material-icons{
+	font-size: 16px;
 
+}
 .restaurantCount{
 	color: green;
+	font-size: 13px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
