@@ -47,7 +47,7 @@ color: #1EC91B;
   }
 }
 @media screen and (max-width: 600px) {
-  .userProvince {
+  .UserProvince {
     display: none;
   }
 }
