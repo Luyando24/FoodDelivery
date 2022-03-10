@@ -80,6 +80,18 @@ color: #1EC91B;
 	text-align: center;
 
 }
+.RestFeatures{
+	display: flex;
+	justify-content: space-between;
+	font-size: 13PX;
+
+}
+.RestFeatures .material-icons{
+
+	font-size: 16PX;
+
+}
+
 .AddressForm{
 margin-top: 20px;
 }
