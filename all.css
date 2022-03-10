@@ -18,12 +18,12 @@ padding-right: 50px;
 
 .logo1{
 font-weight: bolder;
-font-size: 32px;
+font-size: 28px;
 text-decoration: none;
 color: #000;
 }
 .logo2{
-font-size: 32px;
+font-size: 28px;
 text-decoration: none;
 color: #1EC91B;
 }
@@ -43,6 +43,11 @@ color: #1EC91B;
 }
 @media screen and (max-width: 600px) {
   .register {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .userProvince {
     display: none;
   }
 }
@@ -210,7 +215,7 @@ box-shadow: 5px 5px 14px -9px #000000;
 .logo11{
 	color: #fff;
 	font-weight: bolder;
-font-size: 32px;
+font-size: 28px;
 text-decoration: none;
 }
 
