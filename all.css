@@ -86,6 +86,93 @@ color: #1EC91B;
 .Closed{
 	background: red;
 }
+.order{
+	margin-top: 10px;
+}
+@media screen and (max-width: 600px) {
+  .order {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.orderSlider{
+	width: 1000px;
+}
+
+@media screen and (max-width: 600px) {
+  .orderRow {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.orderDetails{
+	width: 100%;
+	margin-top: 2px;
+}
+@media screen and (max-width: 600px) {
+  .orderSlider {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.orderRow{
+	display: flex;
+	justify-content: space-between;
+}
+.orderSlider img{
+	background: red;
+	height: 350px;
+}
+.OrderInfoTitle{
+	font-weight: bold;
+}
+.OrderButtons{
+	margin-top: 5px;
+	display: flex;
+	justify-content: space-between;
+}
+.btnCart{
+	background: #E5E5E5;
+	border-radius: 10px;
+}
+.btnBuy{
+	background: #1EC91B;
+	border-radius: 10px;
+	color: #fff;
+}
+.orderDetails{
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	margin-left: 2px;
+}
+.orderInfo{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.orderSlider{
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+}
+.share{
+	color: green;
+}
+.foodTitle{
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+	margin-top: 5px;
+}
+.foodPrice{
+	font-weight: bold;
+	color: green;
+	margin-bottom: 5px;
+}
 .RestFeatures{
 	display: flex;
 	justify-content: space-between;
