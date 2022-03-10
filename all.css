@@ -166,6 +166,11 @@ box-shadow: 5px 5px 14px -9px #000000;
 	margin-top: 10px;
 	width: 20rem;
 }
+@media screen and (max-width: 600px) {
+  .ProvinceCard {
+    width: 100%;
+  }
+}
 .ProvinceCard img{
 	height: 120px;
 }
