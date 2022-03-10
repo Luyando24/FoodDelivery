@@ -71,6 +71,15 @@ color: #1EC91B;
 	text-align: center;
 
 }
+.ProvinceBanner{
+	display: flex;
+	justify-content: ;
+	background: #CACC69;
+	height: 150px;
+	flex-direction: column;
+	text-align: center;
+
+}
 .AddressForm{
 margin-top: 20px;
 }
