@@ -80,6 +80,12 @@ color: #1EC91B;
 	text-align: center;
 
 }
+.Open{
+	background: green;
+}
+.Closed{
+	background: red;
+}
 .RestFeatures{
 	display: flex;
 	justify-content: space-between;
