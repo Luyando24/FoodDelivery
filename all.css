@@ -502,6 +502,11 @@ text-decoration: none;
 	display: flex;
 	justify-content: space-between;
 }
+.cartAddress{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
 .cardItems img{
 	width: 30px;
 	border-radius: 0;
