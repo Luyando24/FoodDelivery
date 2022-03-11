@@ -268,7 +268,6 @@ margin-top: 0px;
 }
 
 .card:hover{
-	opacity: 0.7;
 	-webkit-box-shadow: 5px 5px 14px -9px #000000; 
 box-shadow: 5px 5px 14px -9px #000000;
     cursor: pointer;
@@ -441,4 +440,81 @@ text-decoration: none;
 .brand{
 	display: flex;
 	flex-direction: column;
+}
+.cartMessage{
+	display: flex;
+	justify-content: center;
+	background: #CACC69;
+	font-size: 25px;
+	font-weight: bolder;
+	color: #fff;
+	width: 800px;
+	padding: 50px;
+	height: 400px;
+}
+.cartHolder{
+	display: flex;
+	margin-top: 20px;
+}
+@media screen and (max-width: 600px) {
+  .cartMessage {
+    display: none;
+  }
+}
+.cartItemCol{
+	background: #fff;
+	display: flex;
+	height: 105px;
+	margin-left: 5px;
+	border-radius: 10px;
+	width: 100%;
+}
+.cartItemsRow{
+	background: #E5E5E5;
+}
+
+.cartPicture img{
+	width: 150px;
+	border-radius: 10px;
+}
+.cartItemBody{
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+}
+.cartItemHeader{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+.CartFoodName{
+	font-weight: bolder;
+}
+.cartPicture img{
+	width: 160px;
+	height: 100px;
+}
+.cartPicture{
+	background: red;
+}
+.cardItems{
+	display: flex;
+	justify-content: space-between;
+}
+.cardItems img{
+	width: 30px;
+	border-radius: 0;
+}
+.paymentMethods{
+	display: flex;
+	justify-content: center;
+}
+.Primary{
+	background: #1EC91B;
+	color: #fff;
+}
+.PaymentButtons{
+	display: flex;
+	justify-content: center;
 }
