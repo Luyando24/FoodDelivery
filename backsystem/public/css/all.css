@@ -1,0 +1,444 @@
+body{
+	margin: 0;
+	background: #f1f1f1;
+	font-family: 'Roboto', sans-serif;
+}
+.topnav{
+background: #fff;
+height: 80px;
+border-bottom: 1px solid grey;
+padding-left: 50px;
+padding-right: 50px;
+}
+@media screen and (max-width: 600px) {
+  .topnav {
+    padding: 0;
+  }
+}
+
+.logo1{
+font-weight: bolder;
+font-size: 28px;
+text-decoration: none;
+color: #000;
+}
+.logo2{
+font-size: 28px;
+text-decoration: none;
+color: #1EC91B;
+}
+
+
+.addRestaurant{
+	text-decoration: none;
+	color: #535353;
+}
+.addRestaurant a: hover{
+	color: #1EC91B;
+}
+
+.register{
+	background: #E5E5E5;
+	border-radius: 10px;
+}
+@media screen and (max-width: 600px) {
+  .register {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .UserProvince {
+    display: none;
+  }
+}
+.login{
+	background: #1EC91B;
+	border-radius: 10px;
+	color: #fff;
+}
+.register:hover{
+	opacity: 0.7;
+}
+.login:hover{
+	opacity: 0.7;
+}
+.banner{
+	display: flex;
+	justify-content: ;
+	background: #CACC69;
+	height: 350px;
+	flex-direction: column;
+	text-align: center;
+
+}
+.ProvinceBanner{
+	display: flex;
+	justify-content: ;
+	background: #CACC69;
+	height: 220px;
+	flex-direction: column;
+	text-align: center;
+
+}
+.Open{
+	background: green;
+}
+.Closed{
+	background: red;
+}
+.order{
+	margin-top: 10px;
+}
+@media screen and (max-width: 600px) {
+  .order {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.orderSlider{
+	width: 1000px;
+}
+
+@media screen and (max-width: 600px) {
+  .orderRow {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.orderDetails{
+	width: 100%;
+	margin-top: 2px;
+}
+@media screen and (max-width: 600px) {
+  .OrderButtons {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    width: 100%;
+    padding: 5px;
+    overflow: hidden;
+    margin-left: -35px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .orderSlider {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.orderRow{
+	display: flex;
+	justify-content: space-between;
+}
+.orderSlider img{
+	background: red;
+	height: 350px;
+}
+.OrderInfoTitle{
+	font-weight: bold;
+}
+.OrderButtons{
+	margin-top: 5px;
+	display: flex;
+	justify-content: space-between;
+}
+.btnCart{
+	background: #E5E5E5;
+	border-radius: 10px;
+}
+.btnBuy{
+	background: #1EC91B;
+	border-radius: 10px;
+	color: #fff;
+}
+.orderDetails{
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	margin-left: 2px;
+}
+.orderInfo{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.orderSlider{
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+}
+.share{
+	color: green;
+}
+.foodTitle{
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+	margin-top: 5px;
+}
+.foodPrice{
+	font-weight: bold;
+	color: green;
+	margin-bottom: 5px;
+}
+.RestFeatures{
+	display: flex;
+	justify-content: space-between;
+	font-size: 13PX;
+
+}
+.RestFeatures .material-icons{
+
+	font-size: 16PX;
+
+}
+
+.AddressForm{
+margin-top: 20px;
+}
+ .ProvinceAdress{
+margin-top: 0px;
+}
+
+.bannerTitle{
+	margin-top: 100px;
+	font-weight: bolder;
+	font-size: 50px;
+	color: #fff;
+	font-style: italic;
+}
+@media screen and (max-width: 600px) {
+  .bannerTitle {
+    margin: 30px;
+  }
+}
+.addressInput{
+	height: 53px;
+	width: 519px;
+	border-style: none;
+	padding-left: 10px;
+}
+@media screen and (max-width: 600px) {
+  .addressInput {
+    height: 53px;
+	width: 270px;
+	border-style: none;
+	padding-left: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .submitAdd {
+    border-style: none;
+	height: 53px;
+	background: #0F0E0E;
+	color: #fff;
+  }
+}
+.submitAdd{
+	border-style: none;
+	height: 53px;
+	background: #0F0E0E;
+	color: #fff;
+}
+
+.Actions{
+	display: flex;
+	margin-top: 10px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.card{
+	border-radius: 10px;
+}
+.card img{
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.cardActions img{
+	height: 200px;
+
+}
+.cardActions{
+	margin-top: 60px;
+}
+
+.card:hover{
+	opacity: 0.7;
+	-webkit-box-shadow: 5px 5px 14px -9px #000000; 
+box-shadow: 5px 5px 14px -9px #000000;
+    cursor: pointer;
+}
+
+.padding{
+	margin-right: 50px;
+	margin-left: 50px;
+}
+.category{
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+.h4{
+	font-weight: bolder;
+}
+.NearMeCard img{
+	height: 120px;
+}
+.NearMeCard{
+	margin-top: 10px;
+	width: 20rem;
+}
+.ProvinceCard{
+	margin-top: 10px;
+	width: 20rem;
+}
+@media screen and (max-width: 600px) {
+  .ProvinceCard {
+    width: 100%;
+  }
+}
+.ProvinceCard img{
+	height: 120px;
+}
+@media screen and (max-width: 600px) {
+  .NearMeCard {
+    width: 11rem;
+  }
+}
+.restCount{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.restaurantCount .material-icons{
+	font-size: 16px;
+
+}
+.restaurantCount{
+	color: green;
+	font-size: 13px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.NearMe{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.Provinces{
+	background: #fff;
+	padding: 5px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.allFood img{
+	height: 220px;
+}
+.allFood{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.BuyNow{
+	background: #1EC91B;
+	color: #fff;
+}
+.AddCart{
+	background: #0F0E0E;
+	color: #fff;
+}
+.groupedButtons{
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer{
+	background: #0F0E0E;
+	margin-top: 10px;
+	padding: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.footerDiv a{
+	text-decoration: none;
+	color: #fff;
+}
+.footerDiv{
+	display: flex;
+	flex-direction: column;
+	line-height: 50px;
+}
+.logo11{
+	color: #fff;
+	font-weight: bolder;
+font-size: 28px;
+text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .padding {
+    margin: 3px;
+  }
+}
+.loginPane{
+	text-align: center;
+	margin-top: 90px;
+
+}
+
+.loginInput{
+	border-style: none;
+	border-radius: 10px;
+	height: 40px;
+	padding: 10px;
+	background: #E5E5E5;
+	width: 100%;
+}
+.loginSubmit{
+	border-style: none;
+	border-radius: 10px;
+	height: 40px;
+	padding: 10px;
+	width: 45%;
+	color: #fff;
+	background: #1EC91B;
+}
+.btn a{
+	text-decoration: none;
+	color: #fff;
+}
+.btn-register a{
+	text-decoration: none;
+	color: #000;
+}
+
+@media screen and (max-width: 600px) {
+  .loginPicture {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .loginPane {
+    margin-top: 20px;
+  }
+}
+.DeliveryArea{
+	margin-top: 20px;
+}
+.brand{
+	display: flex;
+	flex-direction: column;
+}
