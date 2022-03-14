@@ -3,64 +3,66 @@
 namespace App\Http\Livewire;
 use Livewire\Component;
 use App\Models\kyc as kyc_forms;
-
 use Session;
+use Illuminate\Support\Facades\Auth;
 class Kyc extends Component
 {
-    public $business_name, $business_email, $business_phone_number, $business_province, $business_city, $business_location;
+    public $business_name;
+    public $business_email;
+    public $business_phone_number;
+    public $business_province;
+    public $business_city;
+    public $business_location;
+    public $client_id;
+    public $kycform = false;
+
+public function mount($client_id=null){
+    $this->client_id = auth()->user()->id;
+}
+
+    //Triger KYC Form
+    public function edit_kyc()
+    {
+        $this->kycform=true;
+    }
 
 
-//Validation
-protected $rules = [
-    'business_name' => 'required|string|max:255',
-    'business_email' => 'required|email',
-    'business_province' => 'required|string|max:255',
-    'business_city' => 'required|string|max:255',
-    'business_location' => 'required|string|max:255',
-    'business_phone_number' => 'required|string|max:255',
-];
-
-// Store Form Data in the Database
-
-    public function submit(){
-        
-      $this->validate();
-      
-        kyc_forms::create([
-            'business_name' => $this->business_name,
-            'business_email' => $this->business_email,
-            'business_province' => $this->business_province,
-            'business_city' => $this->business_city,
-            'business_location' => $this->business_location,
-            'business_phone_number' => $this->business_phone_number,
-          
-          ]);
-    
-          Session::flash('form_submit','Form Submitted Successfully');
-          $this->resetInputFields(); 
-     
+    //Cancel KYC Form
+    public function cancel_kyc()
+    {
+        $this->reset();
+        $this->resetValidation();
+        $this->emit('cancel_kyc');
     }
 
 
 
-    //Reseting Input Fields
-     
-public function resetInputFields(){
-     $this->business_email = "";
-     $this->business_email = "";
-     $this->business_province = "";
-     $this->business_city = "";
-     $this->business_location = "";
-     $this->business_phone_number = "";
-   
-}
+
+
+    //Validation
+    protected $rules = [
+    'business_name' => 'required|string|max:255',
+    'business_email' => 'required|email|unique:kycs',
+    'business_province' => 'required|string|max:255',
+    'business_city' => 'required|string|max:255',
+    'business_location' => 'required|string|max:255',
+    'business_phone_number' => 'required|string|max:255|unique:kycs',
+    'client_id' => 'required|string|max:255|unique:kycs',
+];
 
 
 
-    public function test(){
+
+    // Store Form Data in the Database
+
+   public function save(){
        
-       dd($this->message);  
+        $this->emit('edit_kyc');
+        $data = $this->validate();
       
+        kyc_forms::create($data);
 
+        //Flash Message if Successfull
+        session()->flash('success', 'saved successfully');
     }
 }
