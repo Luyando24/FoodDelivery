@@ -1,0 +1,46 @@
+<div id="kycmodal" class="form-group" >
+
+
+    <label for="business_name">Business Name</label>
+    <input type="text" class="form-control" id="business_name" aria-describedby="business_name"  wire:model="business_name" placeholder="Enter Name">
+  <div>  @error('business_name') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
+  <div>{{ $business_name }}</div>
+
+  <label for="business_email">Business Email</label>
+    <input type="text" class="form-control" id="business_email" aria-describedby="business_name"  wire:model="business_email" placeholder="Enter Email">
+  <div>  @error('business_email') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
+
+  
+  <label for="business_phone_number">Business Phone Number</label>
+    <input type="text" class="form-control" id="business_phone_number" aria-describedby="business_name"  wire:model="business_phone_number" placeholder="Enter Number">
+  <div>  @error('business_phone_number') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
+
+
+  <label for="business_province">Business Province</label>
+    <input type="text" class="form-control" id="business_province" aria-describedby="business_province"  wire:model="business_province" placeholder="Enter Province">
+  <div>  @error('business_province') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
+
+
+  <label for="business_city">Business City</label>
+    <input type="text" class="form-control" id="business_city" aria-describedby="business_city"  wire:model="business_city" placeholder="Enter City">
+  <div>  @error('business_city') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
+
+
+  
+  <label for="business_name">Business Location</label>
+    <input type="text" class="form-control" id="business_name" aria-describedby="business_name"  wire:model="business_location" placeholder="Enter Precise Location">
+  <div>  @error('business_location') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
+<hr>
+<button class="btn btn-success">Save</button>
+</div>
+  
+
+
+
+<script>
+
+$(document).ready(function(){
+  $('#kycmodal').modal('show');
+});
+</script>
+

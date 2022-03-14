@@ -7,7 +7,7 @@ use App\Models\kyc as kyc_forms;
 use Session;
 class Kyc extends Component
 {
-    public $business_name, $business_email, $business_phone_number, $business_province, $business_city, $business_location;
+    Public $name,$business_name, $business_email, $business_phone_number, $business_province, $business_city, $business_location;
 
 
 //Validation
@@ -22,7 +22,7 @@ protected $rules = [
 
 // Store Form Data in the Database
 
-    public function submit(){
+    public function save(){
         
       $this->validate();
       
@@ -36,10 +36,14 @@ protected $rules = [
           
           ]);
     
-          Session::flash('form_submit','Form Submitted Successfully');
+          Session::flash('success','Saved Successfully');
           $this->resetInputFields(); 
      
     }
+
+
+
+
 
 
 
@@ -56,11 +60,4 @@ public function resetInputFields(){
 }
 
 
-
-    public function test(){
-       
-       dd($this->message);  
-      
-
-    }
 }
