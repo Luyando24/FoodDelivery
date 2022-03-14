@@ -25,7 +25,7 @@ color: #000;
 .logo2{
 font-size: 28px;
 text-decoration: none;
-color: #1EC91B;
+color: #f26505;
 }
 
 
@@ -34,7 +34,7 @@ color: #1EC91B;
 	color: #535353;
 }
 .addRestaurant a: hover{
-	color: #1EC91B;
+	color: #f26505;
 }
 
 .register{
@@ -52,7 +52,7 @@ color: #1EC91B;
   }
 }
 .login{
-	background: #1EC91B;
+	background: #f26505;
 	border-radius: 10px;
 	color: #fff;
 }
@@ -65,7 +65,7 @@ color: #1EC91B;
 .banner{
 	display: flex;
 	justify-content: ;
-	background: #CACC69;
+	background: red;
 	height: 350px;
 	flex-direction: column;
 	text-align: center;
@@ -151,7 +151,7 @@ color: #1EC91B;
 	border-radius: 10px;
 }
 .btnBuy{
-	background: #1EC91B;
+	background: #f26505;
 	border-radius: 10px;
 	color: #fff;
 }
