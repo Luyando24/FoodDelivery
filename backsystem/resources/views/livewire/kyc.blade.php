@@ -34,7 +34,7 @@
 <!--Business Name-->
 <label for="business_name">Business Name</label>
 <input type="text" class="form-control" id="business_name" aria-describedby="business_name"  wire:model="business_name" >
-<div wire:key="foo">  @error('business_name') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
+<div>  @error('business_name') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
 <br>
 
   <!--Business Email-->    
@@ -72,7 +72,7 @@
 <!--Client Id-->    
  
 <input type="hidden" class="form-control" wire:model="client_id" >
-<div>  @error('business_location') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
+<div>  @error('client_id') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
 <br>
 
 
@@ -92,6 +92,7 @@
         @endif
 
 <!--End success Message Here-->
+
 
 
 </div>
