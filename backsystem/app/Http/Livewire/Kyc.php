@@ -2,18 +2,22 @@
 
 namespace App\Http\Livewire;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 use App\Models\kyc as kyc_forms;
 use Sessions; 
 use Illuminate\Support\Facades\Auth;
 
 class Kyc extends Component
 {
+    use WithFileUploads;
+
     public $business_name;
     public $business_email;
     public $business_phone_number;
     public $business_province;
     public $business_city;
     public $business_location;
+    public $photo;
     public $client_id;
     public $kycform = false;
 
@@ -53,7 +57,7 @@ class Kyc extends Component
     */
     public function cancel_kyc()
     {
-        $this->reset();
+        $this->resetExcept('client_id');
         $this->resetValidation();
         $this->emit('cancel_kyc');
     }
@@ -79,6 +83,7 @@ class Kyc extends Component
     'business_city' => 'required|string|max:255',
     'business_location' => 'required|string|max:255',
     'business_phone_number' => 'required|string|max:255|unique:kycs',
+    'photo' => 'required|image|max:1024',
     'client_id' => 'required|numeric|max:255|unique:kycs',
 ];
 
@@ -101,10 +106,12 @@ class Kyc extends Component
     {
         $this->emit('edit_kyc');
         $data = $this->validate();
-      
+        $data['photo'] = $this->photo->store('restraunts');
+       
         kyc_forms::create($data);
        
         session()->flash('success', 'saved successfully. Cancel and Proceed');
+        $this->emit('refreshDetails');
       
     }
 

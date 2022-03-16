@@ -1,8 +1,7 @@
 <div>
 
-
 <div>
-  <!-- Button trigger kyc Form -->
+  <!-- Button trigger kyc Form visible -->
 <button class="btn btn-primary" wire:click="edit_kyc">
   GET STARTED
 </button>
@@ -11,10 +10,7 @@
 @if($kycform)
 
 <br><br>
-
-
-
-
+<!--Invisible form here-->
 <div class="shadow p-3 mb-5 bg-white rounded w-90" id="kycform" >
 <h3 style="font-weight:bold">KYC FORM</h3>
   <hr>
@@ -69,8 +65,27 @@
 <div>  @error('business_location') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
 <br>
 
-<!--Client Id-->    
- 
+
+
+<!--Show photo preview to the user after he/she finishes the upload--> 
+<div>
+  @if ($photo)
+        Photo Preview:
+        <img src="{{ $photo->temporaryUrl() }}">
+    @endif
+</div>
+<!--Here ends the photo preview-->
+
+ <!--Business Picture Upload-->    
+ <label for="business_location">Business Photo</label>
+<input type="file" class="form-control" id="photo" aria-describedby="photo"  wire:model="photo" >
+<div>  @error('photo') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
+<br>
+
+<!--Loading indicators-->
+<div wire:loading wire:target="photo">Uploading...</div>
+
+<!--Client Id (Hidden)-->     
 <input type="hidden" class="form-control" wire:model="client_id" >
 <div>  @error('client_id') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
 <br>
@@ -97,4 +112,7 @@
 
 </div>
 @endif
+
+
+
 </div>

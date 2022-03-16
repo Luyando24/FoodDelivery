@@ -6,7 +6,13 @@ use Livewire\Component;
 
 class BusinessProfile extends Component
 {
-   
+    protected $listeners = ['refreshDetails' => 'render'];
+
+
+
+
+
+
     /*
     |--------------------------------------------------------------------------
     | Rendering Business Profile

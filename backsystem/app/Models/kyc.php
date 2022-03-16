@@ -22,6 +22,7 @@ class kyc extends Model
         'business_province',
         'business_city',
         'business_location',
+        'photo',
         'client_id'
     ];
 
