@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,12 +13,39 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::fallback(function () {
+  
+    return "Wrong address, are you drunk ?";
 });
 
+
+
+ Route::get('address/',function(){
+     //Laravel Http-Client fetching address Location
+    $fetch = Http::withHeaders([
+        'Content-Type' => 'application/json',
+               
+    ])->get('https://api.geoapify.com/v1/geocode/autocomplete?text=Manda Hill&format=json&apiKey=aa09da14472b44869ca9cc43c81f3ef1');
+ 
+    if(is_null($fetch)){
+       return "searching...";
+    }
+
+    $output = $fetch->object();
+    return $output[0];
+    
+
+
+}); 
+
+ 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
+
+
+
+
 
 require __DIR__.'/auth.php';

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Livewire;
+use Illuminate\Support\Facades\Http;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use App\Models\kyc as kyc_forms;
@@ -17,6 +18,9 @@ class Kyc extends Component
     public $business_province;
     public $business_city;
     public $business_location;
+    public $address;
+    public $lat;
+    public $lng;    
     public $photo;
     public $client_id;
     public $kycform = false;
@@ -115,6 +119,22 @@ class Kyc extends Component
       
     }
 
+
+//Laravel Http-Client fetching address Location
+public function address(){
+    
+       $fetch = Http::withHeaders([
+        'Content-Type' => 'application/json',
+               
+    ])->get('https://api.geoapify.com/v1/geocode/autocomplete?text=lusaka&format=json&apiKey=aa09da14472b44869ca9cc43c81f3ef1');
+ 
+    if(is_null($fetch)){
+       return "searching...";
+    }
+
+     $this->address = json_encode($fetch->json(),true);
+}
+    
 
    
 }
