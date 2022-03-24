@@ -46,7 +46,15 @@
 <br>
 
  <!--Business Province-->    
- <label for="business_country" >Business Country</label>
+ <h4>Business Location </h4>
+ 
+<p style="font-style:italic">You can click the 'use current location' button below to use your current location as your business physical address</p>
+
+<button class="btn btn-primary" wire:click="current_location" style="margin:10px"> <i class="fa fa-map-marker"></i> use current location</button>
+
+<button class="btn btn-info" wire:click="cancel_kyc" style="margin:10px">I will Fill in form instead</button>
+ <br><br>
+ <label for="business_country" >Business Province</label>
 <input type="text" class="form-control" id="business_country"  aria-describedby="business_province"  wire:model="business_province" >
 <div>  @error('business_province') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
 <br>
@@ -60,18 +68,22 @@
 
 
  <!--Business Location-->    
- <label for="business_location">Type Location</label>
+ <label for="business_location">Business Country</label>
 <input type="text" class="form-control" id="business_location" aria-describedby="business_location" wire:model="business_location" wire:click="address">
 <div>  @error('business_location') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
 <br>
-@if($address)
-@foreach ($address as $addresses)
 
-  {{$addresses['results'][0]}}
-  
+<!--Business Location --> 
 
-@endforeach
+@if($maps)
+<div>
+<iframe  src="https://maps.google.com/maps?q={{$lat}},{{$lng}}&z=15&output=embed" width="100%" height="250" frameborder="0" style="border:0"></iframe>  
+ </div>
 @endif
+
+
+
+
 <!--Show photo preview to the user after he/she finishes the upload--> 
 <div>
   @if ($photo)
