@@ -4,9 +4,8 @@ body{
 	font-family: 'Roboto', sans-serif;
 }
 .topnav{
-background: #fff;
+background: #FFF9EE;
 height: 80px;
-border-bottom: 1px solid grey;
 padding-left: 50px;
 padding-right: 50px;
 }
@@ -65,7 +64,7 @@ color: #f26505;
 .banner{
 	display: flex;
 	justify-content: ;
-	background: red;
+	background: #FFF9EE;
 	height: 350px;
 	flex-direction: column;
 	text-align: center;
