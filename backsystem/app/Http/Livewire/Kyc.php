@@ -22,12 +22,16 @@ class Kyc extends Component
     public $lng;
     public $photo;
     public $client_id;
+    public $opening_time;
+    public $closing_time;
     public $kycform = false;
     public $maps = false;
+    
 
     public function mount($client_id=null)
     {
         $this->client_id = auth()->user()->id;
+        
     }
 
     /*
@@ -89,6 +93,10 @@ class Kyc extends Component
     'business_phone_number' => 'required|string|max:255|unique:kycs',
     'photo' => 'required|image|max:1024',
     'client_id' => 'required|numeric|max:255|unique:kycs',
+    'lat'=>'required',
+    'lng'=>'required',
+    'closing_time'=>'required',
+    'opening_time'=>'required',
 ];
 
 
@@ -151,7 +159,10 @@ public function current_location()
     $this->lat = $data->latitude;
     $this->lng = $data->longitude;
     $this->maps=true;
+    
    
    
 }
+
+
 }

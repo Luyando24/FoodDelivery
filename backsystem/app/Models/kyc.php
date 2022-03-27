@@ -23,7 +23,11 @@ class kyc extends Model
         'business_city',
         'business_location',
         'photo',
-        'client_id'
+        'lat',
+        'lng',
+        'client_id',
+        'opening_time',
+        'closing_time'
     ];
 
 }

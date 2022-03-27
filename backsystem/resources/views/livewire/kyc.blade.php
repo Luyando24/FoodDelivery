@@ -52,8 +52,10 @@
 
 <button class="btn btn-primary" wire:click="current_location" style="margin:10px"> <i class="fa fa-map-marker"></i> use current location</button>
 
-<button class="btn btn-info" wire:click="cancel_kyc" style="margin:10px">I will Fill in form instead</button>
+<button class="btn btn-info" style="margin:10px">I will Fill in form instead</button>
  <br><br>
+ <!-- If user decides to fill in the form via the use my current location -->
+ @if($maps)
  <label for="business_country" >Business Province</label>
 <input type="text" class="form-control" id="business_country"  aria-describedby="business_province"  wire:model="business_province" >
 <div>  @error('business_province') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
@@ -69,17 +71,40 @@
 
  <!--Business Location-->    
  <label for="business_location">Business Country</label>
-<input type="text" class="form-control" id="business_location" aria-describedby="business_location" wire:model="business_location" wire:click="address">
+<input type="text" class="form-control" id="business_location" aria-describedby="business_location" wire:model="business_location">
 <div>  @error('business_location') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
+<br>
+
 <br>
 
 <!--Business Location --> 
 
-@if($maps)
+
 <div>
 <iframe  src="https://maps.google.com/maps?q={{$lat}},{{$lng}}&z=15&output=embed" width="100%" height="250" frameborder="0" style="border:0"></iframe>  
  </div>
 @endif
+
+
+<!--Business Opening time-->    
+<label for="business_location">Business Opening time</label>
+<input type="time" class="form-control" id="business_location" aria-describedby="opening_time" wire:model="opening_time">
+<div>  @error('opening_time') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
+<br>
+
+
+
+ <!--Business Closing time-->    
+ <label for="business_email" >Business Closing time</label>
+<input type="time" class="form-control" id="business_city"  aria-describedby="closing_time"  wire:model="closing_time" >
+<div>  @error('closing_time') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
+<br>
+
+
+
+
+
+
 
 
 
@@ -87,9 +112,11 @@
 <!--Show photo preview to the user after he/she finishes the upload--> 
 <div>
   @if ($photo)
+  
         Photo Preview:
         <img src="{{ $photo->temporaryUrl() }}">
     @endif
+   
 </div>
 <!--Here ends the photo preview-->
 
@@ -106,7 +133,6 @@
 <input type="hidden" class="form-control" wire:model="client_id" >
 <div>  @error('client_id') <span class="error" style="color:red">{{ $message }}</span> @enderror </div>
 <br>
-
 
 
 
@@ -128,9 +154,10 @@
 
 
 </div>
+
+
+
 @endif
-
-
 
 
 

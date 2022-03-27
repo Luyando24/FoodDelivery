@@ -25,7 +25,7 @@ Route::fallback(function () {
     $fetch = Http::withHeaders([
         'Content-Type' => 'application/json',
                
-    ])->get('https://api.freegeoip.app/json/165.58.129.201?apikey=c8a369a0-3426-11ec-998c-473b46832dcc');
+    ])->get('https://api.geoapify.com/v1/geocode/autocomplete?text=Lusaka west&limit=5&apiKey=aa09da14472b44869ca9cc43c81f3ef1');
  
     if(is_null($fetch)){
        return "searching...";

@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>AZ Business</title>
+  <title>{{config('app.name')}}</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="{{asset('vendors/feather/feather.css')}}">
   <link rel="stylesheet" href="{{asset('vendors/ti-icons/css/themify-icons.css')}}">
@@ -20,16 +20,21 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="{{asset('css/vertical-layout-light/style.css')}}">
 
-  <!--Auto complete for styles for css -->
-  <link rel="stylesheet" href="{{asset('css/autocomplete.css')}}">
+  
   <!-- endinject -->
   <link rel="shortcut icon" href="{{asset('images/favicon.png')}}" />
+  
+<!--Auto complete for styles for css -->
+<link rel="stylesheet" href="{{asset('vendors/geomaps.css')}}">
+
  
   <livewire:styles> 
+</head>
 <body>
-  
+ 
 <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
+
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
         <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="{{asset('images/logo.svg')}}" class="mr-2" alt="logo"/></a>
@@ -403,8 +408,11 @@
 <livewire:business-profile/>
 
 <!--Livewire Business Profile Ends-->
+
+
             </div>
            
+
             <div class="col-md-6 grid-margin transparent">
               <div class="row">
                 <div class="col-md-6 mb-4 stretch-card transparent">
@@ -612,8 +620,7 @@
   <script src="{{asset('js/dashboard.js')}}"></script>
   <script src="{{asset('js/Chart.roundedBarCharts.js')}}"></script>
 
-  <!--Auto Complete Address for js geoapify -->
-  <script src="{{asset('js/autocomplete.js')}}"></script>
+  
   
   <!--Livewire tag-->
   <livewire:scripts> 
@@ -631,7 +638,12 @@
 
           
                         </script>
-</body>
 
+
+
+
+</body>
+<!--Auto Complete Address for js geoapify -->
+<script src="{{asset('vendors/geomaps.js')}}" ></script>
 </html>
 
