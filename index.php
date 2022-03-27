@@ -288,13 +288,8 @@ margin-top: 0px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.card{
-  border-radius: 10px;
-}
-.card img{
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
+
+
 .cardActions img{
   height: 200px;
 
@@ -303,48 +298,32 @@ margin-top: 0px;
   margin-top: 60px;
 }
 
-.card:hover{
-  -webkit-box-shadow: 5px 5px 14px -9px #000000; 
-box-shadow: 5px 5px 14px -9px #000000;
-    cursor: pointer;
-}
 
 .padding{
   margin-right: 100px;
   margin-left: 100px;
 }
 .category{
-  margin-top: 60px;
+  margin-top: 15px;
+  font-weight: bold;
   display: flex;
+  color: #303030;
+  font-size: 18px;
   justify-content: space-between;
 }
+.categoryh{
+  margin-top: 15px;
+  font-weight: bold;
+
+  color: #303030;
+  font-size: 18px;
+
+}
+
 .h4{
   font-weight: bolder;
 }
-.NearMeCard img{
-  height: 120px;
-}
-.NearMeCard{
-  margin-top: 10px;
-  width: 20rem;
-}
-.ProvinceCard{
-  margin-top: 10px;
-  width: 20rem;
-}
-@media screen and (max-width: 600px) {
-  .ProvinceCard {
-    width: 100%;
-  }
-}
-.ProvinceCard img{
-  height: 120px;
-}
-@media screen and (max-width: 600px) {
-  .NearMeCard {
-    width: 11rem;
-  }
-}
+
 .restCount{
   display: flex;
   flex-direction: row;
@@ -368,24 +347,7 @@ box-shadow: 5px 5px 14px -9px #000000;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.Provinces{
-  background: #fff;
-  padding: 5px;
-  padding-bottom: 20px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
 
-.allFood img{
-  height: 220px;
-}
-.allFood{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
 .BuyNow{
   background: #1EC91B;
   color: #fff;
@@ -537,6 +499,13 @@ text-decoration: none;
   height: 50px;
   }
 }
+@media screen and (max-width: 600px) {
+  .submitAdd {
+  margin-top: 3px;
+  text-align: center;
+  }
+}
+
 .cartPicture{
   background: red;
 }
@@ -549,10 +518,7 @@ text-decoration: none;
   justify-content: space-between;
   flex-direction: column;
 }
-.cardItems img{
-  width: 30px;
-  border-radius: 0;
-}
+
 .paymentMethods{
   display: flex;
   justify-content: center;
@@ -601,7 +567,35 @@ color: #616161;
   width: 905px;
   padding-left: 10px;
   }
+  .alertAdd{
+   border-radius: 0;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    background: #F26505;
+  }
+.provincesCard{
+ margin-bottom: 25px;
+}
+.pcol{
+  padding: 0;
+}
+.card img:hover{
+  opacity: 0.9;
+}
+.reDescription{
+  font-size: 12px;
+}
+.resDistance{
+  font-weight: bold;
+  color: #F26505;
+  font-size: 14px;
+}
   </style>
+  <div class="alert alertAdd alert-dismissible fade show center " role="alert">
+  Open a business account and start selling <strong>Add restaurant</strong> 
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
   	<!--Top navigation bar-->
     <nav class="navbar topnav">
     	<div class="container-fluid">
@@ -647,19 +641,165 @@ color: #616161;
     </div>
         </div>
     	</div>
+ </div>
+
     	 
-    </div>
 
-    
-<br>
+
     <!--provinces-->
-    <div class="category padding">
-      <h4>Select province</h4>
+    <div class="category padding mt-3">
+      Find nearest restaurants in the following provinces
     </div>
     
+<div class="container mt-4" style="padding:0">
+  <div class="row g-3">
+    <div class="col-6 col-md-6 col-lg-3" style="">
+      <div class="card" style="border-radius: 0;">
+        <img src="images/lsk.jpg" height="232" class="card-img-top" style="border-radius: 0;">
+        <div class="card-body">
+          <h6 class="card-title">Lusaka</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-6 col-lg-3">
+      <div class="card" style="border-radius: 0;">
+        <img src="images/cb.jpg" height="232" class="card-img-top" style="border-radius: 0;">
+        <div class="card-body">
+          <h6 class="card-title">Copperbelt</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-6 col-lg-3">
+      <div class="card" style="border-radius: 0;">
+        <img src="images/sp.jpg" height="232" class="card-img-top" style="border-radius: 0;">
+        <div class="card-body">
+          <h6 class="card-title">Southern</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-6 col-lg-3">
+      <div class="card" style="border-radius: 0;">
+        <img src="images/et.jpg" height="232" class="card-img-top" style="border-radius: 0;">
+        <div class="card-body">
+          <h6 class="card-title">Eastern</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-6 col-lg-3">
+      <div class="card" style="border-radius: 0;">
+        <img src="images/wp.jpg" height="232" class="card-img-top" style="border-radius: 0;">
+        <div class="card-body">
+          <h6 class="card-title">Western</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-6 col-lg-3">
+      <div class="card" style="border-radius: 0;">
+        <img src="images/lp.jpg" height="232" class="card-img-top" style="border-radius: 0;">
+        <div class="card-body">
+          <h6 class="card-title">Luapula</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-6 col-lg-3">
+      <div class="card" style="border-radius: 0;">
+        <img src="images/np.jpg" height="232" class="card-img-top" style="border-radius: 0;">
+        <div class="card-body">
+          <h6 class="card-title">Northern</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-6 col-lg-3">
+      <div class="card" style="border-radius: 0;">
+        <img src="images/nw.jpg" height="232" class="card-img-top" style="border-radius: 0;">
+        <div class="card-body">
+          <h6 class="card-title">North-western</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="container padding mt-5" style="padding:0">
+    <div class="row">
+      <div class="col">
+        <div class="category">
+          Add restaurant
+        </div>
+        <p>Open a business account for your restaurant and start selling food</p>
+        <button class="btn btn login"><a href="backsystem/public/login">Get started</a></button>
+      </div>
+      <div class="col" style="text-align: right;">
+        <img src="images/rest.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="container padding mt-5" style="padding:0">
+    <div class="row">
+      <div class="col" style="text-align: left;">
+        <img src="images/bike.jpg">
+      </div>
+      <div class="col" style="text-align: right;">
+        <div class="categoryh" style="text-align: right;">
+          Register to deliver
+        </div>
+        <p>Have a bike? Register as a rider and make money delivering food</p>
+        <button class="btn btn login"><a href="backsystem/public/login">Get started</a></button>
+      </div>
+    </div>
+  </div>
 
+   <div class="category padding mt-5">
+      Featured restaurants
+    </div>
     
-    
+<div class="container mt-4" style="padding:0">
+  <div class="row g-3">
+    <div class="col-6 col-md-6 col-lg-3" style="">
+      <div class="card" style="border-radius: 0;">
+        <img src="images/lsk.jpg" height="232" class="card-img-top" style="border-radius: 0;">
+        <div class="card-body">
+          <h6 class="card-title">Restaurant name</h6>
+          <p class="reDescription">Restaurant description</p>
+          <p class="resDistance">4.5km</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-6 col-lg-3">
+      <div class="card" style="border-radius: 0;">
+        <img src="images/cb.jpg" height="232" class="card-img-top" style="border-radius: 0;">
+        <div class="card-body">
+          <h6 class="card-title">Restaurant name</h6>
+          <p class="reDescription">Restaurant description</p>
+          <p class="resDistance">4.5km</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-6 col-lg-3">
+      <div class="card" style="border-radius: 0;">
+        <img src="images/sp.jpg" height="232" class="card-img-top" style="border-radius: 0;">
+        <div class="card-body">
+          <h6 class="card-title">Restaurant name</h6>
+          <p class="reDescription">Restaurant description</p>
+          <p class="resDistance">4.5km</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-6 col-lg-3">
+      <div class="card" style="border-radius: 0;">
+        <img src="images/et.jpg" height="232" class="card-img-top" style="border-radius: 0;">
+        <div class="card-body">
+          <h6 class="card-title">Restaurant name</h6>
+          <p class="reDescription">Restaurant description</p>
+          <p class="resDistance">4.5km</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  
+
     <!--footer-->
     <div class="footer">
     	<div>
