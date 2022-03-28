@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\locations;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,6 +13,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+
+//Retrive all addresses in Lusaka 
+Route::get('/lusaka',[locations::class, 'lusaka']);
+
+
+
+
 
 Route::fallback(function () {
   
