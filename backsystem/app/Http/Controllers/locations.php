@@ -17,20 +17,21 @@ class locations extends Controller
     // Retrieve all the restraunts in Lusaka which are closest to the user's current location 
     public function lusaka(Request $request){
        
-        $lat = -15;
-        $lon = 28.3;
+        $lat = -15; //Current users latitude 
+        $lon = 28.3; //Current users Longitude 
             
         $data = DB::table("kycs")
-            ->select("kycs.id"
+            ->select("*"
                 ,DB::raw("6371 * acos(cos(radians(" . $lat . ")) 
                 * cos(radians(kycs.lat)) 
                 * cos(radians(kycs.lng) - radians(" . $lon . ")) 
                 + sin(radians(" .$lat. ")) 
-                * sin(radians(KYCS.lat))) AS distance"))
+                * sin(radians(kycs.lat))) AS distance"))
                 ->groupBy("distance")
                 ->get();
+                $data_restraunts = json_encode((str_replace( array('[',']') , ''  , $data  )));
  
-      return $data;
+      return view('lusaka',compact('data'));
 
     }
 }

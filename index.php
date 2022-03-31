@@ -657,7 +657,7 @@ color: #616161;
       <div class="card" style="border-radius: 0;">
         <img src="images/lsk.jpg" height="232" class="card-img-top" style="border-radius: 0;">
         <div class="card-body">
-          <h6 class="card-title">Lusaka</h6>
+          <h6 class="card-title"><a href="http://localhost/FoodDelivery/backsystem/public/lusaka">Lusaka</a></h6>
         </div>
       </div>
     </div>
