@@ -665,7 +665,7 @@ color: #616161;
       <div class="card" style="border-radius: 0;">
         <img src="images/cb.jpg" height="232" class="card-img-top" style="border-radius: 0;">
         <div class="card-body">
-          <h6 class="card-title">Copperbelt</h6>
+        <h6 class="card-title"><a href="http://localhost/FoodDelivery/backsystem/public/copperbelt">Copperbelt</a></h6>
         </div>
       </div>
     </div>
@@ -673,7 +673,7 @@ color: #616161;
       <div class="card" style="border-radius: 0;">
         <img src="images/sp.jpg" height="232" class="card-img-top" style="border-radius: 0;">
         <div class="card-body">
-          <h6 class="card-title">Southern</h6>
+        <h6 class="card-title"><a href="http://localhost/FoodDelivery/backsystem/public/southern">Southern</a></h6>
         </div>
       </div>
     </div>
@@ -681,7 +681,7 @@ color: #616161;
       <div class="card" style="border-radius: 0;">
         <img src="images/et.jpg" height="232" class="card-img-top" style="border-radius: 0;">
         <div class="card-body">
-          <h6 class="card-title">Eastern</h6>
+        <h6 class="card-title"><a href="http://localhost/FoodDelivery/backsystem/public/eastern">Eastern</a></h6>
         </div>
       </div>
     </div>
@@ -689,7 +689,7 @@ color: #616161;
       <div class="card" style="border-radius: 0;">
         <img src="images/wp.jpg" height="232" class="card-img-top" style="border-radius: 0;">
         <div class="card-body">
-          <h6 class="card-title">Western</h6>
+        <h6 class="card-title"><a href="http://localhost/FoodDelivery/backsystem/public/western">Western</a></h6>
         </div>
       </div>
     </div>
@@ -697,7 +697,7 @@ color: #616161;
       <div class="card" style="border-radius: 0;">
         <img src="images/lp.jpg" height="232" class="card-img-top" style="border-radius: 0;">
         <div class="card-body">
-          <h6 class="card-title">Luapula</h6>
+        <h6 class="card-title"><a href="http://localhost/FoodDelivery/backsystem/public/luapula">Luapula</a></h6>
         </div>
       </div>
     </div>
@@ -705,7 +705,7 @@ color: #616161;
       <div class="card" style="border-radius: 0;">
         <img src="images/np.jpg" height="232" class="card-img-top" style="border-radius: 0;">
         <div class="card-body">
-          <h6 class="card-title">Northern</h6>
+        <h6 class="card-title"><a href="http://localhost/FoodDelivery/backsystem/public/northen">Nothern</a></h6>
         </div>
       </div>
     </div>
@@ -713,7 +713,7 @@ color: #616161;
       <div class="card" style="border-radius: 0;">
         <img src="images/nw.jpg" height="232" class="card-img-top" style="border-radius: 0;">
         <div class="card-body">
-          <h6 class="card-title">North-western</h6>
+        <h6 class="card-title"><a href="http://localhost/FoodDelivery/backsystem/public/north_western">North Western</a></h6>
         </div>
       </div>
     </div>

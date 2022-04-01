@@ -18,8 +18,32 @@ use App\Http\Controllers\locations;
 //Retrive all addresses in Lusaka 
 Route::get('/lusaka',[locations::class, 'lusaka']);
 
+//Retrive all addresses in copperbelt 
+Route::get('/copperbelt',[locations::class, 'copperbelt']);
 
+//Retrive all addresses in southern 
+Route::get('/southern',[locations::class, 'southern']);
 
+//Retrive all addresses in eastern 
+Route::get('/eastern',[locations::class, 'eastern']);
+
+//Retrive all addresses in Luapula 
+Route::get('/luapula',[locations::class, 'luapula']);
+
+//Retrive all addresses in central 
+Route::get('/central',[locations::class, 'central']);
+
+//Retrive all addresses in northen 
+Route::get('/northen',[locations::class, 'northen']);
+
+//Retrive all addresses in north_western 
+Route::get('/north_western',[locations::class, 'north_western']);
+
+//Retrive all addresses in muchinga 
+Route::get('/muchinga',[locations::class, 'muchinga']);
+
+//Retrive all addresses in western 
+Route::get('/western',[locations::class, 'western']);
 
 
 Route::fallback(function () {
