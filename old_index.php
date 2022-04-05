@@ -1,7 +1,6 @@
 <?php
 include('featured_restraunts.php'); //Connect to the db to fetch featured restraunts
 ?>
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -756,8 +755,6 @@ color: #616161;
    <div class="category padding mt-5">
       Featured restaurants
     </div>
-    
-
 
     <!-- Show featured restraunts here -->
     <div class="container">
@@ -773,11 +770,11 @@ if ($result->num_rows > 0) {
      
      echo  '<img src='.$row["photo"].'/>';
      echo  '<p>'.$row["business_name"].'</p>';
-     echo '<img src="images/ratings/4.jpg" height="50px" width="250px"/>';
+     echo '<img src="images/ratings/4.jpg" height="100px" width="100px"/>';
      echo '<p>'.$row["business_location"].'</p>';
      echo  '<span style="color:royalblue">Opens '.$row["opening_time"].' </span>';
      echo '<span style="color:red">  Closes '.$row["closing_time"].'</span>';
-     
+     echo '<p style="font-style:italic; font-weight:bold">Distance '.$row["opening_time"]. ' km</p>';
      echo '</div>';
    
   }
@@ -794,8 +791,6 @@ $conn->close();
 
 
 
-
-  
 
     <!--footer-->
     <div class="footer">

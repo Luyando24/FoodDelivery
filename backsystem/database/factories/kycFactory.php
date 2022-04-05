@@ -26,10 +26,12 @@ class kycFactory extends Factory
                 'business_phone_number' => $this->faker->phoneNumber(),
                 'lng'=>$this->faker->longitude($min = 27, $max = 30),
                  'lat'=>$this->faker->latitude($min = -18, $max = -14),
-                 'client_id' => $this->faker->randomDigit(3),
+                 'client_id' => $this->faker->biasedNumberBetween($min = 10, $max = 20, $function = 'sqrt'),//randomDigit(3),
                  'opening_time' => $this->faker->time(), 
                  'closing_time' =>  $this->faker->time(),
                  'photo' => $this->faker->imageUrl($width = 400, $height = 250),
+                 //php artisan tinker
+                 //App\Models\kyc::factory(30)->create() 
                
         ];
     }
